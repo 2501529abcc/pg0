@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+body{
+    font-family: "Noto Serif JP", serif;
+    margin: 0;
+}
+/* 出展元 */
+.source{
+    font-size: 0.8em;
+    color: #000000;
+    text-decoration:underline;
+}
+.source2{
+    bottom: 0;
+    font-size: 0.8em;
+    color: #000000;
+    text-decoration:underline;
+}
+
+/* 2カラム */
+#sidediv{
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    padding: 10px;
+    background-color: black;
+    color: #ffffff;
+    list-style: none;
+    box-sizing: border-box;
+}
+#sidediv ul{
+    list-style: none;
+}
+#sidediv a {
+    font-size: 1.7rem;        
+    letter-spacing: 0.1em;     
+    line-height: 1.8;         
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px 0;
+}
+#sidediv a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #007acc;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+#sidediv a:hover {
+    color: #ff6600;
+    transform: scale(1.05);
+}
+#sidediv a:hover:after {
+    width: 100%;
+}
+
+/* home */
+.maindiv{
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    background-color:#e0dede;
+    box-sizing: border-box;
+}
+.introduce{
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+}
+
+.introduce img{
+  width: 50%;
+  height: auto;
+}
+
+
+/* 食べ物 */
+.foodMaindiv{
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.oddFood{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+    background-color: #f9f9f9;
+}
+.oddFood img{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.evenFood{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+    background-color: #f9f9f9;
+}
+.evenFood img{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ドラマ */
+.dramaMaindiv{
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    box-sizing: border-box;
+}
+.dramaX{
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.dramaX img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.dramaText{
+    margin: 20px;
+}
+
+/*音楽*/
+.musicMaindiv{
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.likeMusic{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+    background-color: #f9f9f9;
+}
+#music1{
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+#music2{
+    width: 20%;
+    height: 23%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+/* 漫画 */
+.manngaMaindiv{
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.likeMannga{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    gap: 20px;
+    background-color: #f9f9f9;
+}
+#mannga1{
+    width: 20%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+#mannga2{
+    width: 20%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+/* 実家 */
+.mapMaindiv{
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center ;
+    box-sizing: border-box;
+}
+.map{
+  width: 22%;
+  height: 50%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #e0dede;
+}
